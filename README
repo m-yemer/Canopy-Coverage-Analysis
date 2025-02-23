@@ -1,0 +1,41 @@
+Here’s a simple `README.txt` file that you can include with your project, providing instructions on how to run the code:
+
+```text
+# Tree Coverage Analysis with Heatmap
+
+This project analyzes tree coverage in images and generates a heatmap overlay to indicate the density of tree coverage. The program allows the user to select colors representing tree canopy and non-tree areas, then processes the image to display a heatmap.
+
+## Features:
+- Select colors for tree canopy and non-tree areas.
+- Divide the image into a grid to analyze tree density.
+- Generate a heatmap overlay to visualize tree density in the image.
+
+## Requirements:
+- Python 3.x
+- OpenCV (`cv2`)
+- NumPy
+
+## Installation:
+1. Clone the repository or download the code files.
+2. Install the required dependencies using pip:
+   ```
+   pip install opencv-python numpy
+   ```
+
+## How to Run:
+1. Place your images in a folder (e.g., `images/`).
+2. In the code directory, open a terminal or command prompt and run the script:
+   ```
+   python tree_coverage_analysis.py
+   ```
+   This will process all images in the `images/` directory (you can modify this directory path in the code if needed).
+
+3. The program will prompt you to select colors for the tree canopy and non-tree areas:
+   - Click on regions in the image to select the canopy colors (you must select 4).
+   - Click on regions to select the non-tree colors (you must select 3).
+   - The script will automatically analyze the image and display the tree coverage heatmap.
+
+## How to Use:
+- Run the script, and it will open each image for color selection.
+- After selecting the colors, the program will calculate tree density, apply a heatmap overlay, and display the results.
+
